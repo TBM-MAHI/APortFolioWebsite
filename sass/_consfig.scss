@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color-light:aliceblue;
+$primary-color: #000000;
+$secondary-color: orange;
+
+@mixin transition-ease{
+transition: all ease-in-out 0.5s;
+}
