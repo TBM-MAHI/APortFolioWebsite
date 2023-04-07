@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  padding-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+.about__bio-image p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+.about h2.heading {
+  text-align: center;
+  font-size: 2rem;
+}
+.about .card-container {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  margin: 10px auto;
+}
+.about .card-container .card {
+  background-color: rgba(240, 128, 128, 0.3);
+  width: 250px;
+  box-shadow: 0 3px 10px black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 30px 15px;
+}
+.about .card-container .card .card-content {
+  padding: 20px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.about .card-container .card .card-content .card-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.about .card-container .card .card-content .skills {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.about .card-container .card .card-content .skills img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .card-container .card .card-content .skills p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs__job {
+  background-color: rgba(0, 0, 139, 0.6);
+  padding: 0.5rem;
+  border-bottom: 5px solid orange;
+}
+.about .jobs__job h2, .about .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+.about .jobs__job h6 {
+  margin: 0.3rem 0;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}/*# sourceMappingURL=about.css.map */

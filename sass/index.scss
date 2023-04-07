@@ -1,10 +1,10 @@
-@import '_config';
-@import 'home';
-@import 'about';
+@import 'config.scss';
+@import 'menu';
+
 body{
     font-family: 'Josefin Sans',sans-serif;
-    background-color: $primary-color;
-    color: darkcyan;
+    // background-color: rgba(0, 0, 0, 0.9);
+    color: $secondary-color-text;
     height: 100vh;
     line-height: 1;
 }
@@ -33,7 +33,7 @@ main{
             padding: 0.4rem;
             @include transition-ease;
             &:hover{
-                color:$secondary-color;
+                color:$secondary-color-text;
             }
         }
     }

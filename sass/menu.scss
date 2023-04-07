@@ -79,14 +79,14 @@
             font-weight: 300;
             @include transition-ease;
            &:hover {
-                color: $secondary-color;
+                color: $secondary-color-text;
             }
         }
            
 
         &__item {
             &.active > a {
-                    color: $secondary-color;
+                    color: $secondary-color-text;
             }
             transform: translateX(100vw);
             @include transition-ease;

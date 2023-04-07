@@ -9,7 +9,7 @@
   padding-top: 40vh;
   overflow: hidden;
   text-align: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1679678691002-cca4ae795169?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80") center no-repeat fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../public/home2.jpg") center no-repeat fixed;
   background-size: cover;
   color: aliceblue;
 }

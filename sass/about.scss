@@ -1,5 +1,8 @@
+@import 'config';
+
 .about {
     padding-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.9);
 
     &__bio-image {
         height: 50vh;
@@ -8,24 +11,71 @@
             linear-gradient(to right,
                 rgba($primary-color, 0.9),
                 rgba($primary-color, 0.3)),
-            url('https: //images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center top;
+            url('https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+        margin-bottom: 2rem;
 
         p {
             margin-bottom: 2rem;
+            font-size: 1.2rem;
         }
     }
-
     &__bio {
         width: 80%;
         text-align: center;
 
         .text-secondary {
             padding-bottom: 1rem;
+        }
+    }
+
+    h2.heading {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        max-width: 80%;
+        margin: 10px auto;
+        .card {
+            background-color: rgba(240, 128, 128, 0.3);
+            width: 250px;
+            box-shadow: 0 3px 10px black;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 30px 15px;
+            .card-content {
+                padding: 20px;
+                margin: 0;
+                letter-spacing: 2px;
+                .card-title {
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                    margin-bottom: 1rem;
+                }
+                .skills {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                    img {
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        margin-left: 10px;
+                    }
+                 }
+            }
         }
     }
 
@@ -37,9 +87,10 @@
         grid-gap: 2rem;
 
         &__job {
-            background: lighten($primary-color, 10%);
+            background-color: rgba(0, 0, 139, 0.6);
+
             padding: 0.5rem;
-            border-bottom: 5px solid $secondary-color;
+            border-bottom: 5px solid $secondary-color-text;
 
             h2,h3 {
                 margin: 0.5rem 0;

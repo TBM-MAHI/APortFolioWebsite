@@ -6,7 +6,7 @@
 
 $primary-color-light:aliceblue;
 $primary-color: #000000;
-$secondary-color: orange;
+$secondary-color-text: orange;
 
 @mixin transition-ease{
     transition: all ease-in-out 0.5s;
