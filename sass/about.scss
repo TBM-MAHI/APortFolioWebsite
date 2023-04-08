@@ -11,7 +11,7 @@
             linear-gradient(to right,
                 rgba($primary-color, 0.9),
                 rgba($primary-color, 0.3)),
-            url('https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center top;
+            url('../public/profilePic.JPG') center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -24,6 +24,7 @@
             font-size: 1.2rem;
         }
     }
+
     &__bio {
         width: 80%;
         text-align: center;
@@ -39,65 +40,72 @@
     }
 
     .card-container {
-        display: flex;
-        justify-content: center;
-        max-width: 80%;
+        display: grid;
+        width: 60vw;
         margin: 10px auto;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr) );
+        gap: 20px;
+        margin-top: 20px;
         .card {
             background-color: rgba(240, 128, 128, 0.3);
-            width: 250px;
+            max-width: 250px;
             box-shadow: 0 3px 10px black;
             border-radius: 10px;
             overflow: hidden;
-            margin: 30px 15px;
+         
+
             .card-content {
                 padding: 20px;
                 margin: 0;
                 letter-spacing: 2px;
+
                 .card-title {
                     font-size: 1.2rem;
                     font-weight: 800;
                     margin-bottom: 1rem;
                 }
+
                 .skills {
                     display: flex;
                     align-items: center;
                     margin: 10px 0;
+
                     img {
-                        height: 40px;
-                        width: 40px;
+                        height: 42px;
+                        width: 42px;
                         border-radius: 50%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
+
                     p {
                         font-size: 1.2rem;
                         font-weight: 500;
                         margin-left: 10px;
                     }
-                 }
+                }
+            }
+
+            &.stats {
+               max-width: 340px;
             }
         }
+
     }
 
     .jobs {
         width: 60vw;
-        margin: 2rem auto 0 auto;
+        margin: 2rem auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
 
         &__job {
-            background-color: rgba(0, 0, 139, 0.6);
+            background-color: rgba(240, 128, 128, 0.3);
 
-            padding: 0.5rem;
+            padding: 1rem;
             border-bottom: 5px solid $secondary-color-text;
-
             h2,h3 {
                 margin: 0.5rem 0;
-            }
-
-            h6 {
-                margin: 0.3rem 0;
             }
         }
     }

@@ -1,0 +1,94 @@
+@import 'config';
+
+.projects {
+    padding-bottom: 2rem;
+
+    &__bio-image {
+        height: 40vh;
+        width: 100%;
+        background:
+            linear-gradient(to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)),
+            url('../public/home1.jpg') center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        .text-secondary {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-intro {
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+    .projects_container {
+        display: grid;
+        width: 60vw;
+        margin: 30px auto;
+        row-gap: 30px;
+
+        .project_card {
+            box-shadow: 0 3px 10px black;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+
+            .project-img {
+                height: 250px;
+                overflow: hidden;
+                background: url('../public/project.jpg') center center;
+                background-size: cover;
+            }
+
+            .project-title {
+                padding: 5px 20px;
+                margin: 15px 0;
+            }
+
+
+            .project-description {
+                padding: 5px 20px;
+
+                ul {
+                    margin-left: 40px;
+                    list-style: circle;
+                    line-height: 30px;
+                }
+            }
+
+            .projects__btns {
+                background-color: rgba($secondary-color-text, 0.3);
+                padding: 10px 25px;
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    font-size: 1.2rem;
+                }
+
+                a:hover {
+                    color: $secondary-color-text;
+                }
+            }
+        }
+    }
+
+
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        transform:
+            rotate(90deg) translate(-3rem, -5rem);
+    }
+}
