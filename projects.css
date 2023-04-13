@@ -27,6 +27,7 @@
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  line-height: 25px;
 }
 .projects .projects_container {
   display: grid;
