@@ -18,13 +18,16 @@
         justify-content: flex-end;
 
         .text-secondary {
+            margin-bottom: 1rem;
             font-size: 2rem;
-            margin-bottom: 2rem;
+            line-height: 25px;
         }
 
         .project-intro {
             width: 60%;
             text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -32,7 +35,7 @@
         display: grid;
         width: 60vw;
         margin: 30px auto;
-        row-gap: 30px;
+        row-gap: 40px;
 
         .project_card {
             box-shadow: 0 3px 10px black;
@@ -43,18 +46,16 @@
             .project-img {
                 height: 250px;
                 overflow: hidden;
-                background: url('../public/project.jpg') center center;
+                background: url('../public/mahiCrownClothing.png') center top;
                 background-size: cover;
             }
 
-            .project-title {
-                padding: 5px 20px;
-                margin: 15px 0;
-            }
-
-
             .project-description {
-                padding: 5px 20px;
+                padding: 10px 20px;
+
+                .project-title {
+                    margin: 15px 0;
+                }
 
                 ul {
                     margin-left: 40px;
@@ -71,10 +72,10 @@
 
                 a {
                     font-size: 1.2rem;
-                }
 
-                a:hover {
-                    color: $secondary-color-text;
+                    &:hover {
+                        color: $secondary-color-text;
+                    }
                 }
             }
         }
@@ -92,3 +93,5 @@
             rotate(90deg) translate(-3rem, -5rem);
     }
 }
+
+@import 'responsive.scss'

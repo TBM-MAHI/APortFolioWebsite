@@ -11,3 +11,14 @@ $secondary-color-text: orange;
 @mixin transition-ease{
     transition: all ease-in-out 0.5s;
 }
+
+@mixin media-md{
+    @media screen and (max-width:900px) and (min-width:500px) {
+        @content;
+    }
+}
+@mixin media-sm{
+    @media screen and (max-device-width:499px) and (min-device-width:300px){
+        @content;
+    }
+}

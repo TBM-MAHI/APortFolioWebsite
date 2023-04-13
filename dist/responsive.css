@@ -4,85 +4,6 @@
   padding: 0;
 }
 
-.projects {
-  padding-bottom: 2rem;
-}
-.projects__bio-image {
-  height: 40vh;
-  width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("../public/home1.jpg") center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-.projects__bio-image .text-secondary {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  line-height: 25px;
-}
-.projects__bio-image .project-intro {
-  width: 60%;
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-.projects .projects_container {
-  display: grid;
-  width: 60vw;
-  margin: 30px auto;
-  row-gap: 40px;
-}
-.projects .projects_container .project_card {
-  box-shadow: 0 3px 10px black;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-}
-.projects .projects_container .project_card .project-img {
-  height: 250px;
-  overflow: hidden;
-  background: url("../public/mahiCrownClothing.png") center top;
-  background-size: cover;
-}
-.projects .projects_container .project_card .project-description {
-  padding: 10px 20px;
-}
-.projects .projects_container .project_card .project-description .project-title {
-  margin: 15px 0;
-}
-.projects .projects_container .project_card .project-description ul {
-  margin-left: 40px;
-  list-style: circle;
-  line-height: 30px;
-}
-.projects .projects_container .project_card .projects__btns {
-  background-color: rgba(255, 165, 0, 0.3);
-  padding: 10px 25px;
-  display: flex;
-  justify-content: space-around;
-}
-.projects .projects_container .project_card .projects__btns a {
-  font-size: 1.2rem;
-}
-.projects .projects_container .project_card .projects__btns a:hover {
-  color: orange;
-}
-.projects .social-icons {
-  display: flex;
-  flex-direction: column;
-}
-.projects footer {
-  transform: rotate(90deg) translate(-3rem, -5rem);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 @media screen and (max-width: 900px) and (min-width: 500px) {
   .menu-btn {
     visibility: hidden;
@@ -208,4 +129,19 @@
   .home .bio {
     padding: 0 8px;
   }
-}/*# sourceMappingURL=projects.css.map */
+  .social-icons {
+    bottom: 0.6rem;
+    left: 0.5rem;
+  }
+  .social-icons a {
+    padding: 0.1rem;
+    transition: all ease-in-out 0.5s;
+  }
+  .social-icons a i {
+    font-size: 1rem;
+  }
+  footer {
+    bottom: 0.6rem;
+    right: 1%;
+  }
+}/*# sourceMappingURL=responsive.css.map */
