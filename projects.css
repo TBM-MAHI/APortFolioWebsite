@@ -4,28 +4,77 @@
   padding: 0;
 }
 
-.home {
-  height: 100%;
-  padding-top: 40vh;
-  overflow: hidden;
-  text-align: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../public/home2.jpg") center no-repeat fixed;
+.projects {
+  padding-bottom: 2rem;
+}
+.projects__bio-image {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("../public/home1.jpg") center center;
   background-size: cover;
-  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
-.home__name {
+.projects__bio-image .text-secondary {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 25px;
+}
+.projects__bio-image .project-intro {
+  width: 60%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.projects .projects_container {
+  display: grid;
+  width: 60vw;
+  margin: 30px auto;
+  row-gap: 40px;
+}
+.projects .projects_container .project_card {
+  box-shadow: 0 3px 10px black;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.projects .projects_container .project_card .project-img {
+  height: 250px;
+  overflow: hidden;
+  background: url("../public/mahiCrownClothing.png") center top;
+  background-size: cover;
+}
+.projects .projects_container .project_card .project-description {
+  padding: 10px 20px;
+}
+.projects .projects_container .project_card .project-description .project-title {
+  margin: 15px 0;
+}
+.projects .projects_container .project_card .project-description ul {
+  margin-left: 40px;
+  list-style: circle;
+  line-height: 30px;
+}
+.projects .projects_container .project_card .projects__btns {
+  background-color: rgba(255, 165, 0, 0.3);
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.projects .projects_container .project_card .projects__btns a {
+  font-size: 1.2rem;
+}
+.projects .projects_container .project_card .projects__btns a:hover {
   color: orange;
-  font-size: 5rem;
-  padding-bottom: 1rem;
-  margin-top: 1rem;
-  border-bottom: 2px solid aliceblue;
 }
-.home__name__last {
-  color: orange;
-  font-weight: 700;
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
 }
-.home .bio {
-  margin-top: 1rem;
+.projects footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 * {
@@ -160,7 +209,6 @@
     padding: 0 8px;
   }
   .social-icons {
-    position: fixed;
     bottom: 0.6rem;
     left: 0.5rem;
   }
@@ -171,7 +219,8 @@
   .social-icons a i {
     font-size: 1rem;
   }
-  .social-icons a:hover {
-    color: orange;
+  footer {
+    bottom: 0.6rem;
+    right: 1%;
   }
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=projects.css.map */
