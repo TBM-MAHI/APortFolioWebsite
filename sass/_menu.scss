@@ -1,5 +1,3 @@
-@import '_config';
-
 @mixin positioning($top, $right, $hei, $wid) {
     position: absolute;
     top: $top;
@@ -101,10 +99,8 @@
         }
     }
 }
-@for $i from 1 through 4 {
+@for $i from 1 through 3 {
     .menu-nav__item:nth-child(#{$i}) {
         transition-delay: ($i * 0.1s) + 0.15s;
     }
 }
-
-@import 'responsive.scss'
