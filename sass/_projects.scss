@@ -42,20 +42,32 @@
             overflow: hidden;
             width: 100%;
 
-            .project-img {
-                height: 250px;
+            .project-banner-1 {
+                height: 350px;
                 overflow: hidden;
-                background: url('../public/mahiCrownClothing.png') center top;
+                background: url('../public/mahiCrownClothing.png') center top no-repeat;
                 background-size: cover;
+                }
             }
-
+            .project-banner-2 {
+                height: 350px;
+                overflow: hidden;
+                background: url('../public/facedetect.png') center center no-repeat ;
+                background-size: 1200px 670px;
+            }
+            .project-banner-3 {
+                height: 370px;
+                overflow: hidden;
+                background: url('../public/nasaMissionContrilDashboard.jpg') center top  no-repeat ;
+                background-size: cover ;
+            }
+         
             .project-description {
                 padding: 10px 20px;
 
                 .project-title {
                     margin: 15px 0;
                 }
-
                 ul {
                     margin-left: 40px;
                     list-style: circle;
@@ -78,7 +90,7 @@
                 }
             }
         }
-    }
+    
 
 
 

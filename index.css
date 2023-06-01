@@ -277,33 +277,45 @@
   overflow: hidden;
   width: 100%;
 }
-.projects .projects_container .project_card .project-img {
-  height: 250px;
+.projects .projects_container .project_card .project-banner-1 {
+  height: 350px;
   overflow: hidden;
-  background: url("../public/mahiCrownClothing.png") center top;
+  background: url("../public/mahiCrownClothing.png") center top no-repeat;
   background-size: cover;
 }
-.projects .projects_container .project_card .project-description {
+.projects .projects_container .project-banner-2 {
+  height: 350px;
+  overflow: hidden;
+  background: url("../public/facedetect.png") center center no-repeat;
+  background-size: 1200px 670px;
+}
+.projects .projects_container .project-banner-3 {
+  height: 370px;
+  overflow: hidden;
+  background: url("../public/nasaMissionContrilDashboard.jpg") center top no-repeat;
+  background-size: cover;
+}
+.projects .projects_container .project-description {
   padding: 10px 20px;
 }
-.projects .projects_container .project_card .project-description .project-title {
+.projects .projects_container .project-description .project-title {
   margin: 15px 0;
 }
-.projects .projects_container .project_card .project-description ul {
+.projects .projects_container .project-description ul {
   margin-left: 40px;
   list-style: circle;
   line-height: 30px;
 }
-.projects .projects_container .project_card .projects__btns {
+.projects .projects_container .projects__btns {
   background-color: rgba(255, 165, 0, 0.3);
   padding: 10px 25px;
   display: flex;
   justify-content: space-around;
 }
-.projects .projects_container .project_card .projects__btns a {
+.projects .projects_container .projects__btns a {
   font-size: 1.2rem;
 }
-.projects .projects_container .project_card .projects__btns a:hover {
+.projects .projects_container .projects__btns a:hover {
   color: orange;
 }
 * {
