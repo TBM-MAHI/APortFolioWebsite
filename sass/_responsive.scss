@@ -1,184 +1,184 @@
-@import 'config';
+@import "config";
 
 @mixin menuAndNav($padright, $fontSize) {
-    .menu-btn {
-        visibility: hidden;
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      &__item {
+        display: inline;
+        padding-right: $padright;
+      }
+
+      &__link {
+        font-size: $fontSize;
+      }
     }
-
-    .nav {
-        visibility: visible;
-
-        .menu-nav {
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            background: transparent;
-            text-align: right;
-
-            &__item {
-                display: inline;
-                padding-right: $padright;
-            }
-
-            &__link {
-                font-size: $fontSize;
-            }
-        }
-    }
+  }
 }
 
 @mixin aboutme {
-    .about {
-        padding-bottom: 1rem;
-        background-color: rgba(0, 0, 0, 0.9);
+  .about {
+    padding-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
 
-        &__bio-image {
-            height: 50vh;
-            margin-bottom: 1rem;
-        }
+    &__bio-image {
+      height: 50vh;
+      margin-bottom: 1rem;
+    }
 
-        &__bio {
-            width: 60%;
+    &__bio {
+      width: 60%;
 
-            .text-secondary {
-                padding-bottom: 0.5rem;
+      .text-secondary {
+        padding-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 15px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    h2.heading {
+      font-size: 1.5rem;
+    }
+
+    .card-container {
+      width: 50vw;
+      margin: 10px auto;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+
+      .card {
+        .card-content {
+          .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+
+          .skills {
+            img {
+              height: 30px;
+              width: 30px;
             }
 
             p {
-                font-size: 0.9rem;
-                line-height: 15px;
-                margin-bottom: 1rem;
+              font-size: 0.9rem;
+              font-weight: 400;
             }
+          }
         }
 
-        h2.heading {
-            font-size: 1.5rem;
+        &.stats {
+          max-width: 300px;
+
+          img {
+            height: 200px;
+            width: 250px;
+          }
         }
-
-        .card-container {
-            width: 50vw;
-            margin: 10px auto;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            justify-items: center;
-
-            .card {
-                .card-content {
-
-                    .card-title {
-                        font-size: 1.2rem;
-                        font-weight: 600;
-                    }
-
-                    .skills {
-                        img {
-                            height: 30px;
-                            width: 30px;
-                        }
-
-                        p {
-                            font-size: 0.9rem;
-                            font-weight: 400;
-                        }
-                    }
-                }
-
-                &.stats {
-                    max-width: 300px;
-
-                    img {
-                        height: 200px;
-                        width: 250px;
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 @mixin projects {
-    .projects {
-        &__bio-image {
-            .text-secondary {
-                font-size: 1.8rem;
-            }
+  .projects {
+    &__bio-image {
+      .text-secondary {
+        font-size: 1.8rem;
+      }
 
-            .project-intro {
-                font-size: 0.9rem;
-                margin-bottom: 0.3rem;
-                line-height: 20px;
-            }
-        }
-
-        .projects_container {
-            width: 80vw;
-
-            .project_card {
-                .project-description {
-                    padding: 8px 16px;
-
-                    .project-title {
-                        margin: 15px 0;
-                        font-size: 1rem;
-                    }
-
-                    ul {
-                        margin-left: 30px;
-                        line-height: 18px;
-                        font-size: 0.9rem;
-                    }
-                }
-
-                .projects__btns {
-                    a {
-                        font-size: 0.8rem
-                    }
-                }
-            }
-        }
+      .project-intro {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+        margin-top: 0.3rem;
+        line-height: 17px;
+      }
     }
+
+    .projects_container {
+      width: 80vw;
+
+      .project_card {
+        .project-description {
+          padding: 8px 16px;
+
+          .project-title {
+            margin: 15px 0;
+            font-size: 1rem;
+          }
+
+          ul {
+            margin-left: 30px;
+            line-height: 18px;
+            font-size: 0.9rem;
+          }
+        }
+
+        .projects__btns {
+          a {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @mixin home {
-    .home {
-        padding-top: 30vh;
-        &__name {
-            font-size: 4em;
-        }
-
-        .bio {
-            padding: 0 8px;
-        }
+  .home {
+    padding-top: 30vh;
+    &__name {
+      font-size: 4em;
     }
+
+    .bio {
+      padding: 0 8px;
+    }
+  }
 }
 @mixin footerSocial {
-    .social-icons {
-        bottom: 0.6rem;
-        left: 0.5rem;
+  .social-icons {
+    bottom: 0.6rem;
+    left: 0.5rem;
 
-        a {
-            padding: 0.1rem;
-            @include transition-ease;
+    a {
+      padding: 0.1rem;
+      @include transition-ease;
 
-            i {
-                font-size: 1rem;
-            }
-        }
+      i {
+        font-size: 1rem;
+      }
     }
+  }
 
-    footer {
-        bottom: 0.6rem;
-        right: 1%;
-    }
+  footer {
+    bottom: 0.6rem;
+    right: 1%;
+  }
 }
 @include media-md {
-    @include menuAndNav(1.5rem, 1.5rem);
+  @include menuAndNav(1.5rem, 1.5rem);
 }
 
 @include media-sm {
-    @include menuAndNav(.5rem, 0.8rem);
-    @include aboutme;
-    @include projects;
-    @include home;
-    @include footerSocial;
+  @include menuAndNav(0.5rem, 0.8rem);
+  @include aboutme;
+  @include projects;
+  @include home;
+  @include footerSocial;
 }
